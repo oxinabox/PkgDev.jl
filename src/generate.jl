@@ -125,6 +125,7 @@ function init(pkg::AbstractString, url::AbstractString=""; config::Dict=Dict())
             end
             LibGit2.set_remote_url(repo, url)
         end
+    catch
     end
     return repo
 end
